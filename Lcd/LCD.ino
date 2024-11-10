@@ -1,5 +1,4 @@
-#include <Wire.h> //Biblioteca utilizada gerenciar a comunicação entre dispositicos através do protocolo I2C
-#include <LiquidCrystal_I2C.h> //Biblioteca controlar display 16x2 através do I2C
+#include "Main.h"
 
 #define col  16 //Define o número de colunas do display utilizado
 #define lin   2 //Define o número de linhas do display utilizado
@@ -12,8 +11,6 @@ void setup() {
   lcd.init(); //Inicializa a comunicação com o display já conectado
   lcd.clear(); //Limpa a tela do display
   lcd.backlight(); //Aciona a luz de fundo do display
-
-
 }
 
 void loop() {
