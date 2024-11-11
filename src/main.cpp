@@ -198,6 +198,7 @@ int menu()
 void loop() 
 {
    // Aguarda a aproximacao do cartao
+   //teste
   if ( ! mfrc522.PICC_IsNewCardPresent()) 
   {
     return;
