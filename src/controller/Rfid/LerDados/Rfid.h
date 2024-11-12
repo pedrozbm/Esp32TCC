@@ -9,9 +9,10 @@
 #define SS_PIN    21 //pino sda
 #define RST_PIN   22 // pino de reset
 
-
+//esse objeto 'chave' é utilizado para autenticação
 extern MFRC522 mfrc522; 
 extern MFRC522::MIFARE_Key key;
+// //código de status de retorno da autenticação
 extern MFRC522::StatusCode status;
 
 void leituraDados();
