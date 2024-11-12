@@ -1,4 +1,5 @@
 #include <MFRC522.h> //biblioteca responsável pela comunicação com o módulo RFID-RC522
+#include <SPI.h>  //biblioteca para comunicação do barramento SPI
 
 #define SIZE_BUFFER     18 //tamanho do buffer
 #define MAX_SIZE_BLOCK  16
@@ -17,4 +18,4 @@ extern MFRC522::StatusCode status;
 
 void leituraDados();
 void gravarDados();
-
+void rfidConfig();
