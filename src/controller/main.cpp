@@ -29,7 +29,7 @@ LiquidCrystal_I2C lcd(ende,16,4); //Cria o objeto lcd passando como parâmetros 
 MFRC522 mfrc522(SS_PIN, RST_PIN); 
 MFRC522::MIFARE_Key key;
 MFRC522::StatusCode status;
-
+//teste
 void setup() {
   // Inicia a serial
   Wire.begin(26, 25);
