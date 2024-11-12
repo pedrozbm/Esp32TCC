@@ -1,3 +1,5 @@
-#include ".\include\Rfid.h"
+#include ".\controller\Rfid\LerDados\Rfid.h"
 
-void leituraDados();
+// extern MFRC522 mfrc522(SS_PIN, RST_PIN); 
+
+// void leituraDados();
