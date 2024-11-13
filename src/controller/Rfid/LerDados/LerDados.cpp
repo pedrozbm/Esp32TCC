@@ -1,4 +1,5 @@
 #include ".\controller\Rfid\LerDados\Rfid.h"
+#include ".\controller\lcd\lcd.h"
 
 void rfidConfig()
 {
@@ -61,15 +62,18 @@ void leituraDados()
   Serial.print(F("\nDados bloco ["));
   Serial.print(bloco);
   Serial.print(F("]: "));
-
+  String dadosEnviar = "";
   // imprime os dados lidos
   for (uint8_t i = 0; i < MAX_SIZE_BLOCK; i++)
   {
     // lcd.setCursor(i, 3);
     // lcd.print(buffer[i]);
     Serial.write(buffer[i]);
+    dadosEnviar += (char)buffer[i];
+    
+    // std::string print = (char *)buffer[i];
   }
   Serial.println(" ");
-  // lcd.setCursor(0, 3);
-  // lcd.print((char*)buffer);
+  lcd.setCursor(0, 3);
+  lcd.print(dadosEnviar);
 }
