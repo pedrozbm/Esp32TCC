@@ -17,11 +17,6 @@
 
 // // Definicoes pino modulo RC522
 
-
-MFRC522 mfrc522(SS_PIN, RST_PIN);
-MFRC522::MIFARE_Key key;
-MFRC522::StatusCode status;
-
 void leituraDados();
 void gravarDados();
 void rfidConfig();
