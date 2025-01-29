@@ -1,6 +1,5 @@
-#include ".\controller\Bluetooth\bluetooth.h"
+#include "..\src\include\aplication.h"
 
-// BluetoothSerial SerialBT;
 void configBluetooth()
 {
     Serial.begin(115200);

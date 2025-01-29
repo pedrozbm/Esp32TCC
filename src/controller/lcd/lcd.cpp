@@ -1,5 +1,4 @@
-#include ".\controller\Rfid\LerDados\Rfid.h"
-#include ".\controller\lcd\lcd.h"
+#include ".\include\aplication.h"
 
 void configLcd()
 {

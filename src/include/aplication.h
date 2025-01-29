@@ -1,5 +1,6 @@
 #include ".\controller\Rfid\LerDados\Rfid.h"
+#include ".\controller\Bluetooth\bluetooth.h"
+#include ".\controller\lcd\lcd.h"
 
-// extern MFRC522 mfrc522(SS_PIN, RST_PIN); 
 
-// void leituraDados();
+

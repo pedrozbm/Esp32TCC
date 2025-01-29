@@ -1,15 +1,5 @@
-#include <Arduino.h>
-#include ".\controller\Rfid\LerDados\Rfid.h"
-#include ".\controller\lcd\lcd.h"
-#include ".\controller\Bluetooth\bluetooth.h"
+#include "..\src\include\aplication.h"
 
-LiquidCrystal_I2C lcd(ende, 20, 4); // Cria o objeto lcd passando como parâmetros o endereço, o nº de colunas e o nº de linhas
-BluetoothSerial SerialBT;
-
-// // Definicoes pino modulo RC522
-MFRC522 mfrc522(SS_PIN, RST_PIN);
-MFRC522::MIFARE_Key key;
-MFRC522::StatusCode status;
 
 void setup()
 {

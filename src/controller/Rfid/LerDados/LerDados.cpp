@@ -1,5 +1,4 @@
-#include ".\controller\Rfid\LerDados\Rfid.h"
-#include ".\controller\lcd\lcd.h"
+#include "..\src\include\aplication.h"
 
 void rfidConfig()
 {
