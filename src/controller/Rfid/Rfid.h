@@ -16,8 +16,10 @@ extern MFRC522 mfrc522;
 extern MFRC522::MIFARE_Key key;
 extern MFRC522::StatusCode status;
 
-void leituraDados();
+String leituraDados();
 void gravarDados();
 void rfidConfig();
+void autenticacaoCartao(byte &bloco);
+String leituraBloco(byte &bloco, byte (&buffer)[SIZE_BUFFER], byte &tamanho);
 
 #endif

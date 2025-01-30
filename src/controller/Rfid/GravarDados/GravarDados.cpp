@@ -5,7 +5,7 @@ void gravarDados()
   //imprime os detalhes tecnicos do cartão/tag
   mfrc522.PICC_DumpDetailsToSerial(&(mfrc522.uid)); 
   // aguarda 30 segundos para entrada de dados via Serial
-  Serial.setTimeout(30000L) ;     
+  Serial.setTimeout(30000L) ;
   Serial.println(F("Insira os dados a serem gravados com o caractere '#' ao final\n[máximo de 16 caracteres]:"));
 
   //Prepara a chave - todas as chaves estão configuradas para FFFFFFFFFFFFh (Padrão de fábrica).

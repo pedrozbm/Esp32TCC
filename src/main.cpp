@@ -1,30 +1,33 @@
 #include <Arduino.h>
 #include "..\src\include\aplication.h"
 
+// Criação de nossos objetos globais
+
 MFRC522 mfrc522(SS_PIN, RST_PIN);
 MFRC522::MIFARE_Key key;
 MFRC522::StatusCode status;
 
 BluetoothSerial SerialBT;
 
-LiquidCrystal_I2C lcd(ende, 20, 4); // Cria o objeto lcd passando como parâmetros o endereço, o nº de colunas e o nº de linhas
+LiquidCrystal_I2C lcd(ende, 20, 4);
 
 // put function declarations here:
 void setup()
 {
-  // put your setup code here, to run once:
-  // int result = myFunction(2, 3);
+  // Iniciando serial e configs
 
+  Serial.begin(115200);
   rfidConfig();
   configBluetooth();
-  rfidConfig();
-  Serial.begin(9600);
-  
+  configLcd();
 }
 
 void loop()
 {
-  // put your main code here, to run repeatedly:
+  if (leituraBluetooth() == "a")
+  {
+    enviarBluetooth(leituraDados());
+  }
 }
 
 // put function definitions here:

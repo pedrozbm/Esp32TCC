@@ -6,5 +6,7 @@
 extern BluetoothSerial SerialBT;
 
 void configBluetooth();
+void enviarBluetooth(String dadoEnviar);
+String leituraBluetooth();
 
 #endif
