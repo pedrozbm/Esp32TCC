@@ -11,9 +11,9 @@ void configLcd()
 int menu()
 {
   Serial.println(F("\nEscolha uma opção:"));
-  lcd.setCursor(0, 0);             // Coloca o cursor do display na coluna 1 e linha 1
-  lcd.print("Escolha uma opção:"); // Exibe a mensagem na primeira linha do display
-  lcd.setCursor(0, 1);             // Coloca o cursor do display na coluna 1 e linha 2
+  lcd.setCursor(0, 0);             // Coloca o cursor do display na COLUNAuna 1 e linha 1
+  lcd.print("EsCOLUNAha uma opção:"); // Exibe a mensagem na primeira linha do display
+  lcd.setCursor(0, 1);             // Coloca o cursor do display na COLUNAuna 1 e linha 2
   Serial.println(F("0 - Leitura de Dados"));
   lcd.print("0 - Leitura de' Dados");
   Serial.println(F("1 - Gravação de Dados\n"));
@@ -23,7 +23,7 @@ int menu()
   {
   };
 
-  // recupera a opção escolhida
+  // recupera a opção esCOLUNAhida
   int op = (int)Serial.read();
   // remove os proximos dados (como o 'enter ou \n' por exemplo) que vão por acidente
   while (Serial.available())

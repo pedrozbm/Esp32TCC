@@ -1,5 +1,19 @@
 {
     "files.associations": {
-        "string": "cpp"
+        "string": "cpp",
+        "*.tcc": "cpp",
+        "fstream": "cpp",
+        "unordered_map": "cpp",
+        "istream": "cpp",
+        "ostream": "cpp",
+        "sstream": "cpp",
+        "array": "cpp",
+        "deque": "cpp",
+        "unordered_set": "cpp",
+        "vector": "cpp",
+        "string_view": "cpp",
+        "memory": "cpp",
+        "random": "cpp",
+        "initializer_list": "cpp"
     }
 }

@@ -9,8 +9,8 @@
 #define pinVerde     12
 #define pinVermelho  32
 
-#define SS_PIN    21 //pino sda
-#define RST_PIN   22 // pino de reset
+#define SS_PIN_RFID    21 //pino sda
+#define RST_PIN_RFID   22 // pino de reset
 
 extern MFRC522 mfrc522;
 extern MFRC522::MIFARE_Key key;

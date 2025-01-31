@@ -21,7 +21,7 @@ String leituraDados()
   for (byte i = 0; i < 6; i++)
     key.keyByte[i] = 0xFF;
 
-  // buffer para colocar os dados ligos
+  // buffer para COLUNAocar os dados ligos
   byte buffer[SIZE_BUFFER] = {0};
 
   // bloco que faremos a operação
