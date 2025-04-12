@@ -1,4 +1,6 @@
-#include "..\src\include\aplication.h"
+#include "../src/include/aplication.h"
+
+BluetoothSerial SerialBT;
 
 void configBluetooth()
 {

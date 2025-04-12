@@ -3,7 +3,7 @@
 
 #include "BluetoothSerial.h"
 
-BluetoothSerial SerialBT;
+extern BluetoothSerial SerialBT;
 
 void configBluetooth();
 

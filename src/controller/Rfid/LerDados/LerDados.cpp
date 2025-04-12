@@ -1,4 +1,4 @@
-#include "..\src\include\aplication.h"
+#include "../src/include/aplication.h"
 
 void rfidConfig()
 {

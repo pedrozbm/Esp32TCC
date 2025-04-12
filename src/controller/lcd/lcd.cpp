@@ -1,4 +1,6 @@
-#include ".\include\aplication.h"
+#include "../src/include/aplication.h"
+
+LiquidCrystal_I2C lcd(ende, 20, 4);
 
 void configLcd()
 {

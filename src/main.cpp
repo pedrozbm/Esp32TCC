@@ -1,5 +1,8 @@
-#include "..\src\include\aplication.h"
+#include "../src/include/aplication.h"
 
+MFRC522 mfrc522; 
+MFRC522::MIFARE_Key key;
+MFRC522::StatusCode status;
 
 void setup()
 {

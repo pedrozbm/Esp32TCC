@@ -8,7 +8,7 @@
 #define lin   2 //Define o número de linhas do display utilizado
 #define ende  0x27 //Define o endereço do display
 
-LiquidCrystal_I2C lcd(ende, 20, 4); // Cria o objeto lcd passando como parâmetros o endereço, o nº de colunas e o nº de linhas
+extern LiquidCrystal_I2C lcd; // Cria o objeto lcd passando como parâmetros o endereço, o nº de colunas e o nº de linhas
 
 int menu();
 void configLcd();
